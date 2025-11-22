@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Grabowski_Dawid_S2356150</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_fetching">Fetching data…</string>
+    <string name="status_loaded">Data loaded successfully</string>
+    <string name="status_error">Error: Unable to fetch data. Check internet connection.</string>
+    <string name="last_update_default">Last update: -</string>
+    <string name="last_update">Last update: %1$s</string>
+    <string name="currencies_loaded">Loaded %1$d currencies</string>
+    <string name="showing_main_currencies">Showing %1$d main currencies (USD, EUR, JPY)</string>
+    <string name="please_wait_loading">Please wait - loading data…</string>
+    <string name="network_error">Network error: %1$s</string>
+    <string name="menu_about">About</string>
+
+    <!-- Accessibility - Enables reading out loud flags on TalkBack -->
+    <string name="flag_content_desc">Flag of %1$s</string>
+    <string name="flag_missing_desc">No flag available for %1$s</string>
+
+    <!-- About dialog -->
+    <string name="about_title">About</string>
+    <string name="about_message">
+        <![CDATA[
+        <b>Flag icons</b><br/>
+        Source: <a href="https://flagpedia.net/download/icons">flagpedia.net</a>
+        (based on Wikimedia Commons).<br/><br/>
+        Icons are bundled locally in this app for educational use as required by the coursework.
+        ]]>
+    </string>
+    <string name="ok">OK</string>
+
+</resources>

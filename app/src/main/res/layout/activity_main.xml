@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingTop="40dp"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GBP Currency Exchange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:textColor="#1976D2"/>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ready"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/lastUpdateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last update: -"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:textColor="#555555"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/refreshButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Refresh" />
+
+        <Button
+            android:id="@+id/showMainButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Main (USD,EUR,JPY)" />
+
+        <Button
+            android:id="@+id/showAllButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="Show All" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/searchField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Search by name, code, or country..."
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Color Coding: Green (&lt;1.0) | Yellow (1.0-5.0) | Orange (5.0-10.0) | Red (&gt;10.0)"
+        android:textSize="10sp" />
+
+    <ListView
+        android:id="@+id/currencyListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
